@@ -1,0 +1,59 @@
+//
+// Extends - Modules
+//
+
+
+// Navigation Items
+
+%nav-item-disp {
+
+}
+
+%nav-item-links {
+
+}
+
+// links' circle border
+// $MarkerCircle located in _config
+
+%nav-item-on {
+
+}
+
+// headlines 
+
+%headline-prim {
+    font-size: em(28px);
+    line-height: (48px / 55px);
+    margin-bottom: em(24px, 38px);
+    margin-top: em(6.4px);
+	@include mq(medium) {
+		margin-top: em(15.5px);
+		font-size: em(44px);
+    	line-height: (48px / 60px);
+	}
+	@include mq(large) {
+		margin-top: em(6.4px);
+		line-height: (61.5px / 68px);
+	}
+}
+
+%headline-sec {
+    font-size: em(26px);
+	@include mq(medium) {
+		margin-top: em(4px);
+		font-size: em(42px);
+    	line-height: (48px / 60px);
+	}
+}
+
+%headline-tert {
+	font-size: em(22px);	
+}
+
+%headline-qua {
+	font-size: em(22px);	
+}
+
+
+
