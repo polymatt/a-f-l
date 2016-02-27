@@ -2,3 +2,8 @@
 // Navbar
 //
 
+@include mq(large) {
+	nav#navbar {
+		width: 85%;
+	}
+}

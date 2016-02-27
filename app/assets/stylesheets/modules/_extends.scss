@@ -6,15 +6,33 @@
 // Navigation Items
 
 %nav-item-disp {
-
+	@include mq(medium) {
+		display: inline-block;
+		margin: 0 em(21.5px);
+	}
+	@include mq(large) {
+//		display: inline-block;
+//		margin: 0 auto;
+	}
 }
 
 %nav-item-links {
-
+	font-size: em(16px);
+	margin: 0 auto;
+	padding-top: em(14px, 18px);
+	padding-bottom: em(6px, 8px);
+	padding-left: em(6px, 8px);
+	padding-right: em(6px, 8px);
+	max-width: em(200px);
+	font-family: Arial;
+	@include mq(medium) {
+		font-size: em(18px)
+	}
+	@include mq(large) {
+		padding: em(12px);
+	}
 }
 
-// links' circle border
-// $MarkerCircle located in _config
 
 %nav-item-on {
 
