@@ -1,0 +1,392 @@
+@import url("https://fonts.googleapis.com/css?family=Permanent+Marker");
+/* line 5, /Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, /Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, /Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, /Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, /Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, /Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, /Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, /Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, /Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 16, /Users/MJS/Dropbox/Projects/AFL/app/assets/stylesheets/utilities/_helpers.scss */
+.grid:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 26, /Users/MJS/Dropbox/Projects/AFL/app/assets/stylesheets/utilities/_helpers.scss */
+.srt {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/* line 49, /Users/MJS/Dropbox/Projects/AFL/app/assets/stylesheets/utilities/_helpers.scss */
+.centered, .grid {
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 58, /Users/MJS/Dropbox/Projects/AFL/app/assets/stylesheets/utilities/_helpers.scss */
+.panel--centered, .panel--padded--centered {
+  text-align: center;
+}
+
+/* line 6, /Users/MJS/Dropbox/Projects/AFL/app/assets/stylesheets/base/_base.scss */
+* {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 11, /Users/MJS/Dropbox/Projects/AFL/app/assets/stylesheets/base/_base.scss */
+body {
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: "Georgia", sans-serif;
+}
+
+/* line 33, /Users/MJS/Dropbox/Projects/AFL/app/assets/stylesheets/base/_base.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 8, /Users/MJS/Dropbox/Projects/AFL/app/assets/stylesheets/layout/_extends.scss */
+.panel, .panel--centered {
+  padding-top: 0.25em;
+}
+@media (min-width: 769px) {
+  /* line 8, /Users/MJS/Dropbox/Projects/AFL/app/assets/stylesheets/layout/_extends.scss */
+  .panel, .panel--centered {
+    padding-bottom: 1.25em;
+  }
+}
+
+/* line 15, /Users/MJS/Dropbox/Projects/AFL/app/assets/stylesheets/layout/_extends.scss */
+.panel--padded, .panel--padded--centered {
+  padding-top: 1.5em;
+}
+@media (min-width: 769px) {
+  /* line 15, /Users/MJS/Dropbox/Projects/AFL/app/assets/stylesheets/layout/_extends.scss */
+  .panel--padded, .panel--padded--centered {
+    padding-top: 4.0625em;
+    padding-bottom: 2.125em;
+  }
+}
+
+@media (min-width: 1136px) {
+  /* line 92, /Users/MJS/Dropbox/Projects/AFL/app/assets/stylesheets/utilities/_mixins.scss */
+  .grid__col--1 {
+    width: 6.5%;
+  }
+  /* line 92, /Users/MJS/Dropbox/Projects/AFL/app/assets/stylesheets/utilities/_mixins.scss */
+  .grid__col--2 {
+    width: 15%;
+  }
+  /* line 92, /Users/MJS/Dropbox/Projects/AFL/app/assets/stylesheets/utilities/_mixins.scss */
+  .grid__col--3 {
+    width: 23.5%;
+  }
+  /* line 92, /Users/MJS/Dropbox/Projects/AFL/app/assets/stylesheets/utilities/_mixins.scss */
+  .grid__col--4 {
+    width: 32%;
+  }
+  /* line 92, /Users/MJS/Dropbox/Projects/AFL/app/assets/stylesheets/utilities/_mixins.scss */
+  .grid__col--5 {
+    width: 40.5%;
+  }
+  /* line 92, /Users/MJS/Dropbox/Projects/AFL/app/assets/stylesheets/utilities/_mixins.scss */
+  .grid__col--6 {
+    width: 49%;
+  }
+  /* line 92, /Users/MJS/Dropbox/Projects/AFL/app/assets/stylesheets/utilities/_mixins.scss */
+  .grid__col--7 {
+    width: 57.5%;
+  }
+  /* line 92, /Users/MJS/Dropbox/Projects/AFL/app/assets/stylesheets/utilities/_mixins.scss */
+  .grid__col--8 {
+    width: 66%;
+  }
+  /* line 92, /Users/MJS/Dropbox/Projects/AFL/app/assets/stylesheets/utilities/_mixins.scss */
+  .grid__col--9 {
+    width: 74.5%;
+  }
+  /* line 92, /Users/MJS/Dropbox/Projects/AFL/app/assets/stylesheets/utilities/_mixins.scss */
+  .grid__col--10 {
+    width: 83%;
+  }
+  /* line 92, /Users/MJS/Dropbox/Projects/AFL/app/assets/stylesheets/utilities/_mixins.scss */
+  .grid__col--11 {
+    width: 91.5%;
+  }
+  /* line 92, /Users/MJS/Dropbox/Projects/AFL/app/assets/stylesheets/utilities/_mixins.scss */
+  .grid__col--12 {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1px) and (max-width: 768px) {
+  /* line 17, /Users/MJS/Dropbox/Projects/AFL/app/assets/stylesheets/layout/_grid-columns.scss */
+  [class^="grid__col--"] {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+}
+@media (min-width: 1136px) {
+  /* line 17, /Users/MJS/Dropbox/Projects/AFL/app/assets/stylesheets/layout/_grid-columns.scss */
+  [class^="grid__col--"] {
+    float: left;
+    min-height: 1px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  /* line 53, /Users/MJS/Dropbox/Projects/AFL/app/assets/stylesheets/utilities/_mixins.scss */
+  [class^="grid__col--"] + [class^="grid__col--"] {
+    margin-left: 2%;
+  }
+  /* line 29, /Users/MJS/Dropbox/Projects/AFL/app/assets/stylesheets/layout/_grid-columns.scss */
+  [class^="grid__col--"]:last-of-type {
+    float: right;
+  }
+}
+
+/* line 6, /Users/MJS/Dropbox/Projects/AFL/app/assets/stylesheets/layout/_grid-container.scss */
+.grid {
+  width: 90%;
+}
+/* line 11, /Users/MJS/Dropbox/Projects/AFL/app/assets/stylesheets/layout/_grid-container.scss */
+[class*="grid__col--"] > .grid {
+  width: 100%;
+}
+@media (min-width: 1136px) {
+  /* line 6, /Users/MJS/Dropbox/Projects/AFL/app/assets/stylesheets/layout/_grid-container.scss */
+  .grid {
+    max-width: 1340px;
+    position: relative;
+  }
+}
+
+@media (min-width: 769px) {
+  /* line 8, /Users/MJS/Dropbox/Projects/AFL/app/assets/stylesheets/modules/_extends.scss */
+  .nav__item, .nav__item--current {
+    display: inline-block;
+    margin: 0 1.34375em;
+  }
+}
+
+/* line 19, /Users/MJS/Dropbox/Projects/AFL/app/assets/stylesheets/modules/_extends.scss */
+.nav__item a, .nav__item--current a {
+  font-size: 1em;
+  margin: 0 auto;
+  padding-top: 0.77778em;
+  padding-bottom: 0.75em;
+  padding-left: 0.75em;
+  padding-right: 0.75em;
+  max-width: 12.5em;
+  font-family: Arial;
+}
+@media (min-width: 769px) {
+  /* line 19, /Users/MJS/Dropbox/Projects/AFL/app/assets/stylesheets/modules/_extends.scss */
+  .nav__item a, .nav__item--current a {
+    font-size: 1.125em;
+  }
+}
+@media (min-width: 1136px) {
+  /* line 19, /Users/MJS/Dropbox/Projects/AFL/app/assets/stylesheets/modules/_extends.scss */
+  .nav__item a, .nav__item--current a {
+    padding: 0.75em;
+  }
+}
+
+/* line 43, /Users/MJS/Dropbox/Projects/AFL/app/assets/stylesheets/modules/_extends.scss */
+h1, .headline-primary--grouped, .headline-primary {
+  font-size: 1.75em;
+  line-height: 0.87273;
+  margin-bottom: 0.63158em;
+  margin-top: 0.4em;
+}
+@media (min-width: 769px) {
+  /* line 43, /Users/MJS/Dropbox/Projects/AFL/app/assets/stylesheets/modules/_extends.scss */
+  h1, .headline-primary--grouped, .headline-primary {
+    margin-top: 0.96875em;
+    font-size: 2.75em;
+    line-height: 0.8;
+  }
+}
+@media (min-width: 1136px) {
+  /* line 43, /Users/MJS/Dropbox/Projects/AFL/app/assets/stylesheets/modules/_extends.scss */
+  h1, .headline-primary--grouped, .headline-primary {
+    margin-top: 0.4em;
+    line-height: 0.90441;
+  }
+}
+
+/* line 59, /Users/MJS/Dropbox/Projects/AFL/app/assets/stylesheets/modules/_extends.scss */
+h2, .headline-secondary--grouped, .headline-secondary {
+  font-size: 1.625em;
+}
+@media (min-width: 769px) {
+  /* line 59, /Users/MJS/Dropbox/Projects/AFL/app/assets/stylesheets/modules/_extends.scss */
+  h2, .headline-secondary--grouped, .headline-secondary {
+    margin-top: 0.25em;
+    font-size: 2.625em;
+    line-height: 0.8;
+  }
+}
+
+/* line 68, /Users/MJS/Dropbox/Projects/AFL/app/assets/stylesheets/modules/_extends.scss */
+h3, .headline-tertiary--grouped, .headline-tertiary, .headline-quaternary--grouped, .headline-quaternary {
+  font-size: 1.375em;
+}
+
+/* line 72, /Users/MJS/Dropbox/Projects/AFL/app/assets/stylesheets/modules/_extends.scss */
+h4 {
+  font-size: 1.375em;
+}
+
+/* line 5, /Users/MJS/Dropbox/Projects/AFL/app/assets/stylesheets/modules/_headlines.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Arial", cursive;
+  letter-spacing: 2px;
+  color: #464646;
+  font-weight: 700;
+}
+
+/* line 13, /Users/MJS/Dropbox/Projects/AFL/app/assets/stylesheets/modules/_headlines.scss */
+.headline-primary {
+  margin-bottom: 1.125em;
+}
+/* line 47, /Users/MJS/Dropbox/Projects/AFL/app/assets/stylesheets/utilities/_mixins.scss */
+.headline-primary--grouped {
+  margin-bottom: 0.5em;
+}
+/* line 21, /Users/MJS/Dropbox/Projects/AFL/app/assets/stylesheets/modules/_headlines.scss */
+.headline-secondary {
+  margin-bottom: 0.375em;
+}
+/* line 47, /Users/MJS/Dropbox/Projects/AFL/app/assets/stylesheets/utilities/_mixins.scss */
+.headline-secondary--grouped {
+  margin-bottom: 0.5em;
+}
+/* line 47, /Users/MJS/Dropbox/Projects/AFL/app/assets/stylesheets/utilities/_mixins.scss */
+.headline-quaternary--grouped {
+  margin-bottom: 0;
+}
+
+/* line 5, /Users/MJS/Dropbox/Projects/AFL/app/assets/stylesheets/modules/_nav.scss */
+.nav {
+  margin-top: 0.3125em;
+  margin-bottom: 0.28125em;
+  padding: 0;
+}
+
+@media (min-width: 1136px) {
+  /* line 6, /Users/MJS/Dropbox/Projects/AFL/app/assets/stylesheets/modules/_navbar.scss */
+  nav#navbar {
+    width: 85%;
+  }
+}
+@media (min-width: 1px) and (max-width: 768px) {
+  /* line 5, /Users/MJS/Dropbox/Projects/AFL/app/assets/stylesheets/states/_collapsed.scss */
+  .is-collapsed.mobile {
+    visibility: collapse;
+    padding: 0;
+    height: 0;
+    margin: 0;
+    line-height: 0;
+  }
+}
+
+@media (min-width: 1px) and (max-width: 768px) {
+  /* line 9, /Users/MJS/Dropbox/Projects/AFL/app/assets/stylesheets/states/_grid-display.scss */
+  .is-hidden-mobile {
+    display: none;
+  }
+}
+@media (min-width: 769px) {
+  /* line 5, /Users/MJS/Dropbox/Projects/AFL/app/assets/stylesheets/states/_grid-display.scss */
+  .is-displayed-mobile {
+    display: none;
+  }
+}
+@media (min-width: 1px) and (max-width: 768px) {
+  /* line 5, /Users/MJS/Dropbox/Projects/AFL/app/assets/stylesheets/states/_grid-display.scss */
+  .is-displayed-mobile {
+    display: block;
+  }
+}
+
+@media (min-width: 769px) {
+  /* line 22, /Users/MJS/Dropbox/Projects/AFL/app/assets/stylesheets/states/_grid-display.scss */
+  .is-hidden-tablet {
+    display: none;
+  }
+}
+@media (min-width: 1136px) {
+  /* line 22, /Users/MJS/Dropbox/Projects/AFL/app/assets/stylesheets/states/_grid-display.scss */
+  .is-hidden-tablet {
+    display: block;
+  }
+}
